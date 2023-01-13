@@ -1,6 +1,7 @@
 import React from 'react'
-
 import log from '../utils/output.js'
+
+import Questions from './Questions.js'
 
 export default function Quiz() {
 	const onNext = () => {
@@ -14,6 +15,7 @@ export default function Quiz() {
 		<div className='container'>
 			<h1 className='title text-light'>Quiz App</h1>
 			{/** Display Questions */}
+			<Questions />
 
 			<div className='grid'>
 				<button className='btn prev' onClick={onPrev}>

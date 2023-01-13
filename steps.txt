@@ -1,0 +1,7 @@
+cd client
+npx create-react-app .
+npm start
+remove unnecessary files: App.test.js  logo.svg  reportWebVitals.js  setupTests.js
+add App.js to src/components   
+mkdir styles     add App.css, index.css
+npm i react-redux react-router-dom axios

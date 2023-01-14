@@ -7,9 +7,7 @@ export default function Questions() {
 
 	const questions = data[0]
 
-	useEffect(() => {
-		log('q')
-	})
+	useEffect(() => {})
 
 	const onSelect = () => {
 		setChecked(true)

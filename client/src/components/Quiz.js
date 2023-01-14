@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import log from '../utils/output.js'
 
 import Questions from './Questions.js'
 
+/** redux store import */
+import { useSelector } from 'react-redux'
+
 export default function Quiz() {
+	const state = useSelector((state) => state)
+
+	useEffect(() => {
+		log(state)
+	})
+
 	const onNext = () => {
-		log('next')
+		// log('next')
 	}
 	const onPrev = () => {
-		log('previous')
+		// log('previous')
 	}
 
 	return (
